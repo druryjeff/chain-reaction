@@ -1,0 +1,146 @@
+/* Page Set Up */
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Special Elite', cursive;
+  background-color: #212121;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 600px;
+  background: url(../img/cardboard.jpg);
+}
+
+
+/* Animation Specifics */
+
+#slant1 {
+  position: absolute;
+  top: 97px;
+  left: 40px;
+  width: 280px;
+  height: 20px;
+  transform: rotate(10deg);
+  background: url(../img/wood-planks.jpg) no-repeat bottom right;
+  opacity: .8;
+}
+
+#slant2 {
+  position: absolute;
+  top: 240px;
+  right: 40px;
+  width: 280px;
+  height: 20px;
+  transform: rotate(-10deg);
+  background: url(../img/wood-planks.jpg) no-repeat bottom left;
+  background: url(../img/wood-planks.jpg) no-repeat bottom left;
+  opacity: .8;
+}
+
+#teeter {
+  position: absolute;
+  top: 577px;
+  left: 20px;
+  width: 200px;
+  height: 3px;
+  transform: rotate(11deg);
+  background: url(../img/wood-planks.jpg) no-repeat top right;
+}
+
+#base {
+  position: absolute;
+  bottom: 0;
+  left: 110px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url(../img/wood-planks.jpg) no-repeat top right;
+}
+
+#letter {
+  position: absolute;
+  bottom: -11px;
+  left: 180px;
+  font-size: 4.5em;
+  font-weight: bold;
+  color: #212121;
+}
+
+#ball {
+  position: absolute;
+  z-index: 0;
+  top: -40px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #689F38;
+  border-radius: 50%;
+  background: url(../img/marble.jpg) no-repeat 50% 50%;
+}
+
+#net {
+  position: absolute;
+  z-index: 1;
+  top: 370px;
+  left: -100px;
+  width: 100px;
+  height: 60px;
+  background: url(../img/wood-planks.jpg) no-repeat top right;
+}
+
+#net:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  right: 0;
+  width: 20px;
+  height: 80px;
+  background: url(../img/wood-planks.jpg) no-repeat top left;
+}
+
+#spring {
+  position: absolute;
+  bottom: -150px;
+  right: 60px;
+  width: 60px;
+  height: 150px;
+  background: url(../img/spring.png) no-repeat top center;
+  background-size: cover;
+}
+
+#door {
+  position: absolute;
+  top: 590px;
+  right: 20px;
+  width: 100px;
+  height: 10px;
+  background: url(../img/wood-planks.jpg) no-repeat bottom left;
+}
+
+#button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  padding: 0 20px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 3;
+  color: #fff;
+  background-color: #383838;
+}
+
+#button:hover {
+  cursor: pointer;
+}
